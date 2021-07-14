@@ -16,6 +16,7 @@ body{
     background-color: lightslategray;
     font-size: larger;
     font-weight: bolder;
+    
 }
 .CharacterPage1, .CharacterPage2{
     display: flex;
@@ -27,34 +28,34 @@ body{
 .CharacterBios{
     background-color: gray;
     flex: 100%;
-    padding: 10px 0px 10px 0px;
+    margin: 5px;
 }
 .CharacterBackground{
     background-color: gray;
     flex: 100%;
-    padding: 25px 10px 10px 25px;
+    margin: 5px;
 }
 .CharacterPicture{
     background-color: gray;
     flex: 100%;
     display: flex;
     flex-direction: column;
-    padding: 10px 0px 0px 0px;
+    margin: 5px;
 }
 .CharacterEquipments{
     background-color: gray;
     flex: 100%;
-    padding: 10px 0px 10px 0px;
+    margin: 5px;
 }
 .CharacterInventory{
     background-color: gray;
     flex: 100%;
-    padding: 10px 0px 0px 0px;
+    margin: 5px;
 }
 .CharacterStats{
     background-color: darkgoldenrod;
     flex: 100%;
-    padding: 10px 0px 10px 0px;
+    margin: 5px;
 }
 
 /* CSS for the Essentials */
@@ -70,12 +71,12 @@ body{
 .BalanceArea label::before{
     content: attr(tag);
     position: static;
-    color: purple;
+    color: greenyellow;
 }
 .NotesArea label::before{
     content: attr(tag);
     position: static;
-    color: purple;
+    color: greenyellow;
 }
 .Essentials input{
     color: darkred;
@@ -161,6 +162,7 @@ body{
     max-height: 90%;
     resize: none;
     font-family: Helvetica Neue, Helvetica, Arial;
+    font-size: medium;
 }
 /* CSS for Canvas in CharacterPicture div */
 .CharacterPicture div{
@@ -255,8 +257,6 @@ body{
 .InventoryTable{
     border-collapse: collapse;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
 }
 .InventoryTable td{
     background: dimgray;

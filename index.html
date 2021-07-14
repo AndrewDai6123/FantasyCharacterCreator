@@ -55,6 +55,7 @@
     <section class="CharacterPage1">
         <div class="CharacterBios">
             <ul class="ImmediateBios">
+                <h1>Profile</h1><hr><hr>
                 <input class="CharacterName" type="text" placeholder="Character Name">
                 <input class="Race" type="text" placeholder="Race">
                 <input class="Gender" type="text" placeholder="Gender">
@@ -67,10 +68,14 @@
             </ul>
         </div>
         <div class="CharacterBackground">
-            <textarea name="Background" placeholder="Character Background"></textarea>
+            <ul>
+                <h1>Background</h1><hr><hr>
+                <textarea name="Background" placeholder="Character Background"></textarea>
+            </ul>
         </div>
 
         <div class="CharacterPicture">
+            <ul><h1>Picture</h1><hr><hr></ul>
             <!-- One Way to add a paste function to canvas:
             https://stackoverflow.com/questions/18377891/how-can-i-let-user-paste-image-data-from-the-clipboard-into-a-canvas-element-in
              -->
@@ -91,7 +96,9 @@
         
 
         
-        <div class="CharacterStats">Stats Area To be Updated</div>
+        <div class="CharacterStats">Stats Area To be Updated
+
+        </div>
 
     </section>
 
@@ -101,117 +108,123 @@
 
     <section class="CharacterPage2">
         <div class="CharacterEquipments">
-            <h1>Equipped Items</h1><hr><hr>
-            <h3>Armor</h3>
-            <div class="Equipment">
-                <div>
-                    <div class="Equipment-Info-1">
-                        <label tag="Item:">        
-                            <input type="text" class="ItemNameInput">
-                        </label>
+            <ul>
+                <h1>Equipped Items</h1>
+                <h3>Armor</h3>
+                <div class="Equipment">
+                    <div>
+                        <div class="Equipment-Info-1">
+                            <label tag="Item:">        
+                                <input type="text" class="ItemNameInput">
+                            </label>
+                        </div>
+                        <div class="Equipment-Info-2">
+                            <label tag="Cost:">
+                                <input type="text" class="ItemCostInput">
+                            </label>
+                            <label tag="Durability:">
+                                <input type="text" class="ItemDurabilityInput">
+                            </label>
+                        </div>
                     </div>
-                    <div class="Equipment-Info-2">
-                        <label tag="Cost:">
-                            <input type="text" class="ItemCostInput">
-                        </label>
-                        <label tag="Durability:">
-                            <input type="text" class="ItemDurabilityInput">
-                        </label>
-                    </div>
-                </div>
-                <div class="Equip-Desc-Area">
-                    <div class="Desc1">
-                        <label tag="Description:">
-                            <textarea type="text" class="ItemDescription"></textarea> 
-                        </label>
-                    </div>
-                    <div class="Remove-Equipment">
-                        <button class="Remove-Equipment-Btn">Remove</button>
-                    </div>
-                </div>
-            </div>
-            <h3>Weapons</h3>
-            <div class="Equipment">
-                <div>
-                    <div class="Equipment-Info-1">
-                        <label tag="Item:">        
-                            <input type="text" class="ItemNameInput">
-                        </label>
-                    </div>
-                    <div class="Equipment-Info-2">
-                        <label tag="Cost:">
-                            <input type="text" class="ItemCostInput">
-                        </label>
-                        <label tag="Durability:">
-                            <input type="text" class="ItemDurabilityInput">
-                        </label>
+                    <div class="Equip-Desc-Area">
+                        <div class="Desc1">
+                            <label tag="Description:">
+                                <textarea type="text" class="ItemDescription"></textarea> 
+                            </label>
+                        </div>
+                        <div class="Remove-Equipment">
+                            <button class="Remove-Equipment-Btn">Remove</button>
+                        </div>
                     </div>
                 </div>
-                <div class="Equip-Desc-Area">
-                    <div class="Desc1">
-                        <label tag="Description:">
-                            <textarea type="text" class="ItemDescription"></textarea> 
-                        </label>
+                <h3>Weapons</h3>
+                <div class="Equipment">
+                    <div>
+                        <div class="Equipment-Info-1">
+                            <label tag="Item:">        
+                                <input type="text" class="ItemNameInput">
+                            </label>
+                        </div>
+                        <div class="Equipment-Info-2">
+                            <label tag="Cost:">
+                                <input type="text" class="ItemCostInput">
+                            </label>
+                            <label tag="Durability:">
+                                <input type="text" class="ItemDurabilityInput">
+                            </label>
+                        </div>
                     </div>
-                    <div class="Remove-Equipment">
-                        <button class="Remove-Equipment-Btn">Remove</button>
-                    </div>
-                </div>
-            </div>
-            <h3>Accessories</h3>
-            <div class="Equipment">
-                <div>
-                    <div class="Equipment-Info-1">
-                        <label tag="Item:">        
-                            <input type="text" class="ItemNameInput">
-                        </label>
-                    </div>
-                    <div class="Equipment-Info-2">
-                        <label tag="Cost:">
-                            <input type="text" class="ItemCostInput">
-                        </label>
-                        <label tag="Durability:">
-                            <input type="text" class="ItemDurabilityInput">
-                        </label>
-                    </div>
-                </div>
-                <div class="Equip-Desc-Area">
-                    <div class="Desc1">
-                        <label tag="Description:">
-                            <textarea type="text" class="ItemDescription"></textarea> 
-                        </label>
-                    </div>
-                    <div class="Remove-Equipment">
-                        <button class="Remove-Equipment-Btn">Remove</button>
+                    <div class="Equip-Desc-Area">
+                        <div class="Desc1">
+                            <label tag="Description:">
+                                <textarea type="text" class="ItemDescription"></textarea> 
+                            </label>
+                        </div>
+                        <div class="Remove-Equipment">
+                            <button class="Remove-Equipment-Btn">Remove</button>
+                        </div>
                     </div>
                 </div>
-            </div>
+                <h3>Accessories</h3>
+                <div class="Equipment">
+                    <div>
+                        <div class="Equipment-Info-1">
+                            <label tag="Item:">        
+                                <input type="text" class="ItemNameInput">
+                            </label>
+                        </div>
+                        <div class="Equipment-Info-2">
+                            <label tag="Cost:">
+                                <input type="text" class="ItemCostInput">
+                            </label>
+                            <label tag="Durability:">
+                                <input type="text" class="ItemDurabilityInput">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="Equip-Desc-Area">
+                        <div class="Desc1">
+                            <label tag="Description:">
+                                <textarea type="text" class="ItemDescription"></textarea> 
+                            </label>
+                        </div>
+                        <div class="Remove-Equipment">
+                            <button class="Remove-Equipment-Btn">Remove</button>
+                        </div>
+                    </div>
+                </div>
+            </ul>
+            
         </div>
         <div class="CharacterInventory">
             <!-- If I want to make the table "Excel-like"
             https://stackoverflow.com/questions/16292572/how-to-make-html-table-excel-like-editable-for-multiple-cells-i-e-simultaneo
              -->
-            <h1>Inventory</h1><hr><hr>
-            <table class="InventoryTable"> 
-                <col width = 30%>
-                <col width = 10%>
-                <col width = 58%>
-                <col width = 2%>
-                <thead>
-                    <tr>
-                        <th>Items</th>
-                        <th>Cost</th>
-                        <th>Description</th>
-                        <th><div id="NumRows"></divtype>0</div></th>
-                    </tr>
-                </thead>
-                <tbody><!-- tr will be injected to the empty tbody from js script --></tbody>
-                <tfoot>
-                    <tr>
-                        <td colspan="5"><input type="button" value="Add New Item" id="AddRow"></td>
-                    </tr>
-                </tfoot>
-            </table>
+             <ul>
+                <h1>Inventory</h1>
+                <table class="InventoryTable"> 
+                    <col width = 30%>
+                    <col width = 10%>
+                    <col width = 58%>
+                    <col width = 2%>
+                    <thead>
+                        <tr>
+                            <th>Items</th>
+                            <th>Cost</th>
+                            <th>Description</th>
+                            <th><div id="NumRows"></divtype>0</div></th>
+                        </tr>
+                    </thead>
+                    <tbody><!-- tr will be injected to the empty tbody from js script --></tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="5"><input type="button" value="Add New Item" id="AddRow"></td>
+                        </tr>
+                    </tfoot>
+                </table>
+             </ul>
+            
         </div>
     </section>
 
