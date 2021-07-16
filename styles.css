@@ -28,11 +28,13 @@ body{
     background-color: gray;
     flex: 100%;
     margin: 5px;
+    border: 2px solid coral;
 }
 .CharacterBackground{
     background-color: gray;
     flex: 100%;
     margin: 5px;
+    border: 2px solid coral;
 }
 .CharacterPicture{
     background-color: gray;
@@ -40,21 +42,25 @@ body{
     display: flex;
     flex-direction: column;
     margin: 5px;
+    border: 2px solid coral;
 }
 .CharacterEquipments{
     background-color: gray;
     flex: 100%;
     margin: 5px;
+    border: 2px solid coral;
 }
 .CharacterInventory{
     background-color: gray;
     flex: 100%;
     margin: 5px;
+    border: 2px solid coral;
 }
 .CharacterStats{
-    background-color: darkgoldenrod;
+    background-color: gray;
     flex: 100%;
     margin: 5px;
+    border: 2px solid coral;
 }
 
 /* CSS for the Essentials */
