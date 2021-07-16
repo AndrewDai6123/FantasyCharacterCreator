@@ -12,7 +12,14 @@ $(document).ready(function(){
     });
 })
 
-
+// Function to collapse and expand the Essentials div
+$(document).ready(function(){
+    var value = 0
+    $(".CollapseButton").on('click', function(){
+        $('.Collapsable').toggle()
+        $(".CollapseButton").text( $('.Collapsable').is(':visible')?'Collapse':'Expand' );
+    })
+})
 
 // Function to Upload Images to Canvas
 window.addEventListener('load', function() {
@@ -62,7 +69,7 @@ $(document).ready(function(){
         $("#NumRows").text(n)
     });
 
-
+    // Function to Remove rows
     $(document).on('click', '.Remove', function(){
         $(this).parents("tr").remove();
         n--;

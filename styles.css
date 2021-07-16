@@ -67,6 +67,8 @@ body{
 .Essentials{
     position: sticky;
     top: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 .LevelArea label::before{
     content: attr(tag);
@@ -95,6 +97,24 @@ body{
 #ExpTextField{
     width: 100px;
 }
+
+.Collapse{
+    flex: 100%;
+}
+.CollapseButton{
+    float: right;
+    height: 30px;
+    font-size: 20px;
+    background-color: slategray;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.Collapsable{
+    display: flex;
+    flex: 100%;
+}
 .LevelArea{
     flex: 20%;
 }
@@ -107,7 +127,6 @@ body{
 .NotesArea{
     flex: 50%;
 }
-
 #Balance{
     background-color: white;
     color: black;
@@ -291,6 +310,8 @@ body{
     font-weight: bolder;
     border: none;
     cursor: pointer;
+    margin: auto;
+    font-size: 18px;
 }
 #AddRow{
     width: 100%;
