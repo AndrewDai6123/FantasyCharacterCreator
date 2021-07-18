@@ -18,6 +18,9 @@ $(document).ready(function(){
     $(".CollapseButton").on('click', function(){
         $('.Collapsable').toggle()
         $(".CollapseButton").text( $('.Collapsable').is(':visible')?'Collapse':'Expand' );
+        // Adjust the Inventory <th> to prevent the event of overlapping sticky elements when scrolled to the bottom
+        var maxHeight = $('.Essentials').css("height")
+        $('.InventoryTable th').css("top", maxHeight)
     })
 })
 
@@ -35,7 +38,7 @@ window.addEventListener('load', function() {
     });
 });
 
-// Function to Add/Remove Rows to Inventory
+// Functions for Inventory
 $(document).ready(function(){
     var n = 0;
     $('.InventoryTable').on('click', '#AddRow', function(){
@@ -75,7 +78,12 @@ $(document).ready(function(){
         n--;
         $("#NumRows").text(n)
     });
+
+    // Function to Adjust <th> top limit
+    $(document).ready(function(){
+        var maxHeight = $('.Essentials').css("height")
+        $('.InventoryTable th').css("top", maxHeight)
+    })
+
 });
-
-
 

@@ -5,6 +5,7 @@ body{
     padding: 0;
     display: flex;
     flex-wrap: wrap;
+    margin: auto;
 }
 header { 
     margin: 5px;
@@ -137,6 +138,7 @@ a {
 .Collapsable{
     display: flex;
     flex: 100%;
+    flex-wrap: wrap;
 }
 .LevelArea{
     flex: 20%;
@@ -176,28 +178,26 @@ a {
     flex-direction: column;
     font: caption;
     font-weight: bolder;
+    
 }
 .ImmediateBios div{
     display: flex;
     font-size: larger;
 }
 .CharacterName{
-    min-width: 300px;
-    width: 70%;
+    width: 250px;
     height: 30px;
 }
-.Race, .Gender{
+.Race, .Gender, .Class, .Alignment{
     height: 20px;
-    min-width: 150px;
-    width: 40%;
+    width: 200px;
 }
 
 .SecondaryBios input{
     color: darkred;
     display: flex;
     flex-direction: column;
-    min-width: 50%;
-    max-width: 75%;
+    width: 200px;
     font: larger;
     font-weight: bold;
 }
@@ -317,7 +317,7 @@ a {
 .InventoryTable th{
     background: teal;
     position: sticky;
-    top: 0;
+    top: 0px;
 }
 /* .InventoryTable th::after{
     content: ' ';
