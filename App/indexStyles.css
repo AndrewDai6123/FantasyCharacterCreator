@@ -1,0 +1,30 @@
+body{
+    background: rgb(44, 47, 51);
+    color: white;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+header { 
+    margin: 5px;
+    width: 100%;
+}
+.HomeButton{
+    float: left;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    float: right;
+}
+nav li {
+    display: inline-block;
+    margin: 0px 0px 0px 20px;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
